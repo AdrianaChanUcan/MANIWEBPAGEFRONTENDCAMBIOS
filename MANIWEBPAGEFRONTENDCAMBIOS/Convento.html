@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- FAVICON - LOGO EN LA PESTAÑA -->
+    <link rel="icon" type="image/png" href="img/logo.png">
+    <link rel="shortcut icon" type="image/png" href="img/logo.png">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="css/global.css">
+    
+    <title>Convento de San Miguel - Maní, Pueblo Mágico</title>
+</head>
+<body>
+    <!-- ========================================
+         NAVBAR
+         ======================================== -->
+    <nav class="navbar-mani">
+        <div class="logo-container">
+            <img src="img/logo.png" alt="Maní Logo" class="logo-img">
+            <div class="logo-text">
+                <h1>Maní, Yucatán</h1>
+                <p>Pueblo Mágico</p>
+            </div>
+        </div>
+        
+        <div class="nav-center">
+            <ul class="nav-links-mani">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="directorio.html">Directorio</a></li>
+                <li><a href="experiencias.html">Experiencias</a></li>
+                <li><a href="mapa.html">Mapa</a></li>
+                <li><a href="turismo.html">Información</a></li>
+            </ul>
+        </div>
+
+        <div class="nav-right">
+            <input type="text" id="search-nav" class="form-control form-control-sm" placeholder="Buscar..." style="max-width: 200px;">
+            <a href="#login-modal" class="cta-button" id="open-login">Iniciar sesión</a>
+        </div>
+    </nav>
+
+    <!-- ========================================
+         HERO SECTION DEL CONVENTO
+         ======================================== -->
+    <section class="convento-hero">
+        <div class="convento-overlay"></div>
+        <img src="img/iglesia2.png" alt="Convento de San Miguel Arcángel" class="convento-hero-img">
+        <div class="convento-hero-content">
+            <h1 class="convento-title">⛪ Convento de San Miguel Arcángel</h1>
+            <p class="convento-subtitle">Joya de arte sacro colonial de 1549 - Ruta de los Conventos</p>
+        </div>
+    </section>
+
+    <!-- ========================================
+         CONTENIDO PRINCIPAL
+         ======================================== -->
+    <main class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <!-- INFORMACIÓN RÁPIDA -->
+                <div class="row g-3 mb-5">
+                    <div class="col-md-4">
+                        <div class="info-card-small">
+                            <div class="info-icon">📍</div>
+                            <h5>Ubicación</h5>
+                            <p>Centro histórico de Maní<br>11 km de Oxkutzcab</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="info-card-small">
+                            <div class="info-icon">⏰</div>
+                            <h5>Horario</h5>
+                            <p>6:00 - 12:00<br>17:00 - 19:00 horas</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="info-card-small">
+                            <div class="info-icon">💰</div>
+                            <h5>Entrada</h5>
+                            <p>Libre (iglesia)<br>Tours: $35 pesos</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- HISTORIA -->
+                <div class="convento-section">
+                    <h2 class="section-heading">📜 Historia del Convento</h2>
+                    <p class="section-text">
+                        El Convento de San Miguel Arcángel, <strong>fundado en 1549 por los franciscanos</strong>, es uno de los sitios más emblemáticos de Yucatán. 
+                        Fue construido con el trabajo y esfuerzo de <strong>seis mil indígenas mayas</strong> de la dinastía prehispánica de los Xiues entre 1549 y 1559, 
+                        siendo el <strong>tercero en antigüedad</strong> de su categoría en la Península de Yucatán.
+                    </p>
+                    <p class="section-text">
+                        Su diseño fue obra del <strong>arquitecto Fray Juan de Mérida</strong>, un antiguo conquistador que después de combatir en las batallas, 
+                        se convirtió en religioso e ingresó a la orden franciscana. Según Fray Bernardino de Lizana, el conjunto "se hizo todo en siete meses porque 
+                        andaban en la obra seis mil indios".
+                    </p>
+                    <p class="section-text">
+                        Este majestuoso templo representa la <strong>fusión de la fe cristiana con las tradiciones locales mayas</strong>, reflejando la compleja 
+                        historia de la evangelización y la arquitectura colonial española en la región.
+                    </p>
+                </div>
+
+                <!-- EVENTO HISTÓRICO IMPORTANTE -->
+                <div class="convento-section">
+                    <h3 class="section-heading" style="color: #d9534f;">⚠️ Un Momento Importante: El Auto de Fe de 1562</h3>
+                    <p class="section-text">
+                        El <strong>12 de julio de 1562</strong>, en el amplio atrio del Convento de Maní, sucedió uno de los autos de fe más trágicos de América. 
+                        El obispo <strong>Diego de Landa</strong> ordenó la quema de cientos de códices mayas, esculturas y otros registros prehispánicos. 
+                        También se torturó y exhibió públicamente a indígenas considerados herejes.
+                    </p>
+                    <p class="section-text">
+                        Paradójicamente, años después Landa escribió la <strong>"Relación de las cosas de Yucatán"</strong>, un tratado que documentó creencias 
+                        mayas e incluía un catálogo de glifos que siglos después fueron clave para descifrar la escritura maya, ayudando a preservar su historia.
+                    </p>
+                </div>
+
+                <!-- CARACTERÍSTICAS ARQUITECTÓNICAS -->
+                <div class="convento-section">
+                    <h2 class="section-heading">🏛️ Características Arquitectónicas</h2>
+                    <p class="section-text">
+                        El conjunto conventual ocupa una superficie aproximada de <strong>20,500 m²</strong>, de los cuales el atrio abarca <strong>7,268 m²</strong>. 
+                        El atrio se encuentra a un nivel superior al de las calles adyacentes, sugiriendo que fue construido sobre una antigua plataforma piramidal maya.
+                    </p>
+                    <div class="features-grid">
+                        <div class="feature-item">
+                            <span class="feature-icon">🔱</span>
+                            <h5>Fachada Principal</h5>
+                            <p>Diseño renacentista del siglo XVII coronado por dos espadañas para campanas. Posee una hornacina central con la imagen tallada en piedra del Arcángel San Miguel.</p>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">🎨</span>
+                            <h5>Retablos Barrocos</h5>
+                            <p>Extraordinarios retablos de los siglos XVII y XVIII. El retablo mayor es de dos cuerpos con seis hornacinas. Destacan especialmente los dedicados a la Pasión de Cristo y San Antonio de Padua.</p>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">🚪</span>
+                            <h5>Capilla Abierta</h5>
+                            <p>Una de las capillas abiertas más grandes de Yucatán. Era utilizada para predicar a los miles de indígenas que no cabían en la iglesia principal.</p>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">📚</span>
+                            <h5>Claustro Conventual</h5>
+                            <p>Claustro bajo y alto con arcos de cantera moldurada. Contiene murales del período colonial que evidencian la influencia de artesanos mayas.</p>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">💧</span>
+                            <h5>La Noria</h5>
+                            <p>Pozo de 25 metros de profundidad construido en 1554. Sistema ingenieril para extraer agua y regar la huerta conventual.</p>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">🌿</span>
+                            <h5>Huerta Conventual</h5>
+                            <p>Amplio jardín que servía para cultivos, huerto medicinal y recreación. Refleja la vida conventual con espacios de meditación y trabajo agrícola.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- QUÉ PUEDES HACER -->
+                <div class="convento-section">
+                    <h2 class="section-heading">🎯 Qué Puedes Hacer</h2>
+                    <ul class="activities-list">
+                        <li>
+                            <strong>Recorrer el interior:</strong> Explora las naves del convento y admira su arquitectura colonial de más de 470 años. Observa los detalles de los muros de mampostería y las bóvedas de cañón.
+                        </li>
+                        <li>
+                            <strong>Admirar los retablos:</strong> Contempla los retablos barrocos restaurados de los siglos XVII y XVIII. Especialmente destacan los dedicados a la Pasión de Cristo y San Antonio de Padua, únicos en sus características artísticas con cariátides.
+                        </li>
+                        <li>
+                            <strong>Conocer la historia maya:</strong> Aprende sobre la conquista espiritual, la evangelización y el importante papel de los mayas xiues en la construcción de este monumento.
+                        </li>
+                        <li>
+                            <strong>Visitar la Capilla Abierta:</strong> Observa esta rara estructura arquitectónica desde la cual los frailes predicaban a miles de indígenas que no cabían en la iglesia.
+                        </li>
+                        <li>
+                            <strong>Explorar el Claustro:</strong> Camina por los claustros bajo y alto, observando la arquitectura y los murales coloniales que evidencian la influencia de artesanos indígenas.
+                        </li>
+                        <li>
+                            <strong>Descender a la Noria:</strong> Con acceso guiado, conoce este ingenio hidráulico de 25 metros de profundidad que abastecía de agua al convento.
+                        </li>
+                        <li>
+                            <strong>Fotografía:</strong> Captura momentos de este lugar histórico. El atardecer ofrece las mejores vistas panorámicas.
+                        </li>
+                        <li>
+                            <strong>Reflexión y paz:</strong> Disfruta de la serenidad del lugar, ideal para meditación y contemplación espiritual.
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- INFORMACIÓN PRÁCTICA -->
+                <div class="convento-section">
+                    <h2 class="section-heading">ℹ️ Información Práctica</h2>
+                    <div class="info-box">
+                        <div class="info-item">
+                            <strong>📅 Mejor época para visitar:</strong>
+                            <p>Octubre a abril (clima más fresco, 24-28°C). Evita julio-septiembre por calor extremo (35-38°C) y temporada de lluvias.</p>
+                        </div>
+                        <div class="info-item">
+                            <strong>⏱️ Duración recomendada:</strong>
+                            <p>2 a 3 horas para una visita completa. Tours guiados: 1.5 horas. Con visita a otros atractivos de Maní: 4-5 horas.</p>
+                        </div>
+                        <div class="info-item">
+                            <strong>🎒 Qué llevar:</strong>
+                            <p>Agua abundante, bloqueador solar SPF 50+, repelente de mosquitos, cámara fotográfica, zapatos cómodos, sombrero o gorra, ropa ligera.</p>
+                        </div>
+                        <div class="info-item">
+                            <strong>♿ Accesibilidad:</strong>
+                            <p>Parcialmente accesible. El acceso a la iglesia y parte del claustro es posible. Consulta con el personal del lugar para áreas elevadas.</p>
+                        </div>
+                        <div class="info-item">
+                            <strong>🚌 Cómo llegar:</strong>
+                            <p>Desde Mérida: 100 km al sureste. En autobús desde Terminal Noreste. En auto: carretera a Chetumal, pasando por Acanceh, Tecoh, Tekit y Teabo.</p>
+                        </div>
+                        <div class="info-item">
+                            <strong>👥 Tours disponibles:</strong>
+                            <p>Sábado y domingo: 12:00, 13:00, 14:00 y 15:00 horas. Entre semana: previa reservación. Email: direccionturismo2022@gmail.com. Costo: $35 pesos.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DATOS CURIOSOS -->
+                <div class="convento-section">
+                    <h2 class="section-heading">💡 Datos Curiosos</h2>
+                    <ul class="activities-list">
+                        <li>
+                            <strong>Construcción de récord:</strong> Fue construido en solo 7 meses con aproximadamente 6,000 trabajadores mayas xiues, una velocidad extraordinaria para la época.
+                        </li>
+                        <li>
+                            <strong>Tercero más antiguo:</strong> Después del Convento de Mérida (1550) e Izamal (1548), Maní es el tercero de la Provincia de San José de Yucatán.
+                        </li>
+                        <li>
+                            <strong>Sobre plataforma maya:</strong> Construido sobre un antiguo "mul" (pirámide) maya que fue nivelado y enterrado, reutilizando la estructura prehispánica como base.
+                        </li>
+                        <li>
+                            <strong>Capilla única:</strong> Posee una de las capillas abiertas más grandes de Yucatán, indicando la enorme población indígena del pueblo en el siglo XVI.
+                        </li>
+                        <li>
+                            <strong>Arte mestizo:</strong> Combinación de técnica española con ejecución indígena. Se evidencia en murales, esculturas y detalles arquitectónicos de influencia maya.
+                        </li>
+                        <li>
+                            <strong>Preservación del conocimiento:</strong> Aunque Landa quemó códices en 1562, paradójicamente su posterior estudio de la cultura maya ayudó a preservar su escritura.
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- GALERÍA CON CARRUSEL BOOTSTRAP -->
+                <div class="convento-section">
+                    <h2 class="section-heading">📸 Galería Visual</h2>
+                    
+                    <div id="carouselGaleria" class="carousel slide" data-bs-ride="carousel">
+                        <!-- Indicadores -->
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselGaleria" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselGaleria" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselGaleria" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+
+                        <!-- Imágenes del carrusel -->
+                        <div class="carousel-inner rounded-3" style="box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);">
+                            <div class="carousel-item active">
+                                <img src="img/iglesia1.png" class="d-block w-100" alt="Atrio del Convento de Maní" style="height: 450px; object-fit: cover; border-radius: 15px;">
+                                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded-bottom">
+                                    <h5>Atrio principal - 7,268 m²</h5>
+                                    <p>Amplio espacio para la congregación de fieles</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/iglesia2.png" class="d-block w-100" alt="Interior del Convento" style="height: 450px; object-fit: cover; border-radius: 15px;">
+                                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded-bottom">
+                                    <h5>Interior con retablos barrocos</h5>
+                                    <p>Extraordinarios retablos de los siglos XVII y XVIII</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/iglesia3.png" class="d-block w-100" alt="Fachada del Convento" style="height: 450px; object-fit: cover; border-radius: 15px;">
+                                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded-bottom">
+                                    <h5>Fachada con espadañas</h5>
+                                    <p>Diseño renacentista coronado por dos espadañas para campanas</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Botones de navegación -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselGaleria" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Anterior</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselGaleria" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Siguiente</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- BOTÓN DE RETORNO -->
+                <div class="text-center mt-5 mb-5">
+                    <a href="experiencias.html" class="btn btn-primary btn-lg " style="background-color: #9f922b;">
+                        ⬅️ Volver a experiencias
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- ========================================
+         FOOTER
+         ======================================== -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="footer-title">Maní, Pueblo Mágico</h5>
+                    <p class="text-muted small">Tu guía digital para descubrir la magia de Maní, Yucatán y la Ruta de los Conventos.</p>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="footer-title">Enlaces Rápidos</h5>
+                    <ul class="list-unstyled small">
+                        <li><a href="directorio.html" class="text-muted text-decoration-none">Directorio</a></li>
+                        <li><a href="experiencias.html" class="text-muted text-decoration-none">Experiencias</a></li>
+                        <li><a href="mapa.html" class="text-muted text-decoration-none">Mapa</a></li>
+                        <li><a href="turismo.html" class="text-muted text-decoration-none">Información</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="footer-title">Contacto</h5>
+                    <p class="text-muted small mb-1">Comité Pueblo Mágico Maní</p>
+                    <p class="text-muted small mb-1">Email: direccionturismo2022@gmail.com</p>
+                    <p class="text-muted small">Tours: Sábado y Domingo 12pm-3pm</p>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="footer-title">Redes Sociales</h5>
+                    <div class="social-links">
+                        <a href="#" class="btn btn-sm btn-outline-light me-2">Facebook</a>
+                        <a href="#" class="btn btn-sm btn-outline-light me-2">Instagram</a>
+                        <a href="#" class="btn btn-sm btn-outline-light">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <hr class="bg-secondary">
+            <div class="text-center text-muted small">
+                <p class="mb-1">&copy; 2024-2025 Maní, Pueblo Mágico. Todos los derechos reservados.</p>
+                <p>Información verificada - Imágenes de Wikimedia Commons</p>
+                <p>Desarrollado por: Esvetlana Batun | Wendy Chan | Pedro Poot</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========================================
+         MODAL DE LOGIN
+         ======================================== -->
+    <div class="modal fade" id="login-modal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Inicio de Sesión</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form class="login-form">
+                        <div class="mb-3">
+                            <label for="login-username" class="form-label">Usuario</label>
+                            <input type="text" class="form-control" id="login-username" name="username" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="login-password" class="form-label">Contraseña</label>
+                            <input type="password" class="form-control" id="login-password" name="password" required>
+                        </div>
+                        <button type="submit" class="btn btn-purple w-100">Ingresar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Scripts personalizados -->
+    <script src="js/app.js"></script>
+</body>
+</html>

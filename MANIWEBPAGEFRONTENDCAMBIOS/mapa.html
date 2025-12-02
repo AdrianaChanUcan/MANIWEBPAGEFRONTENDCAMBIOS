@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="css/global.css">
+
+    <title>Mapa - Maní, Pueblo Mágico</title>
+</head>
+<body>
+    <!-- ========================================
+         NAVBAR
+         ======================================== -->
+    <nav class="navbar-mani">
+        <div class="logo-container">
+            <img src="img/logo.png" alt="Maní Logo" class="logo-img">
+            <div class="logo-text">
+                <h1>Maní, Yucatán</h1>
+                <p>Pueblo Mágico</p>
+            </div>
+        </div>
+        
+        <div class="nav-center">
+            <ul class="nav-links-mani">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="directorio.html">Directorio</a></li>
+                <li><a href="experiencias.html">Experiencias</a></li>
+                <li><a href="mapa.html">Mapa</a></li>
+                <li><a href="turismo.html">Información</a></li>
+            </ul>
+        </div>
+
+        <div class="nav-right">
+            <input type="text" id="search-nav" class="form-control form-control-sm" placeholder="Buscar..." style="max-width: 200px;">
+            <a href="#login-modal" class="cta-button" id="open-login">Iniciar sesión</a>
+        </div>
+    </nav>
+
+    <!-- ========================================
+         MAPA INTERACTIVO
+         ======================================== -->
+    <section class="py-5" id="mapa">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h1 class="section-title">Ubicación en el Mapa</h1>
+                <div class="section-line"></div>
+            </div>
+            <div class="row mb-5">
+                <div class="col-12">
+                    <div class="map-wrapper">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3778.4655562186873!2d-89.3940171!3d20.4001985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f567e6c9c8c5fcb%3A0x4b70f2d7b99d1d92!2sMan%C3%AD%2C%20Yuc.%2C%20M%C3%A9xico!5e0!3m2!1ses!2sus!4v1699810103747!5m2!1ses!2sus"
+                            width="100%"
+                            height="400"
+                            style="border:0;"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Información de distancias -->
+            <div class="row g-3">
+                <div class="col-lg-4 col-md-6">
+                    <div class="info-card">
+                        <h5 class="info-card-title">🚗 Desde Mérida</h5>
+                        <p class="mb-0"><strong>120 km</strong> aprox. (2 horas)</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="info-card">
+                        <h5 class="info-card-title">🚗 Desde Oxkutzcab</h5>
+                        <p class="mb-0"><strong>12 km</strong> aprox. (15 minutos)</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="info-card">
+                        <h5 class="info-card-title">🚗 Desde Ticul</h5>
+                        <p class="mb-0"><strong>15 km</strong> aprox. (20 minutos)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         FOOTER
+         ======================================== -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="footer-title">Maní, Pueblo Mágico</h5>
+                    <p class="text-muted small">Tu guía digital para descubrir la magia de Maní, Yucatán.</p>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="footer-title">Enlaces Rápidos</h5>
+                    <ul class="list-unstyled small">
+                        <li><a href="directorio.html" class="text-muted text-decoration-none">Directorio</a></li>
+                        <li><a href="experiencias.html" class="text-muted text-decoration-none">Experiencias</a></li>
+                        <li><a href="mapa.html" class="text-muted text-decoration-none">Mapa</a></li>
+                        <li><a href="turismo.html" class="text-muted text-decoration-none">Información</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="footer-title">Contacto</h5>
+                    <p class="text-muted small mb-1">Comité Pueblo Mágico Maní</p>
+                    <p class="text-muted small mb-1">Email: info@manipueblomágico.com</p>
+                    <p class="text-muted small">Teléfono: (999) XXX-XXXX</p>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="footer-title">Redes Sociales</h5>
+                    <div class="social-links">
+                        <a href="#" class="btn btn-sm btn-outline-light me-2">Facebook</a>
+                        <a href="#" class="btn btn-sm btn-outline-light me-2">Instagram</a>
+                        <a href="#" class="btn btn-sm btn-outline-light">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <hr class="bg-secondary">
+            <div class="text-center text-muted small">
+                <p class="mb-1">&copy; 2024 Maní, Pueblo Mágico. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========================================
+         MODAL DE LOGIN
+         ======================================== -->
+    <div class="modal fade" id="login-modal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Inicio de Sesión</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form class="login-form">
+                        <div class="mb-3">
+                            <label for="login-username" class="form-label">Usuario</label>
+                            <input type="text" class="form-control" id="login-username" name="username" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="login-password" class="form-label">Contraseña</label>
+                            <input type="password" class="form-control" id="login-password" name="password" required>
+                        </div>
+                        <button type="submit" class="btn btn-purple w-100">Ingresar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Scripts personalizados -->
+    <script src="js/app.js"></script>
+</body>
+</html>

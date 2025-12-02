@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="img/logo.png">
+    <link rel="shortcut icon" type="image/png" href="img/logo.png">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="css/global.css">
+
+    <title>Maní, Pueblo Mágico - Tu Guía Digital</title>
+</head>
+<body>
+    <!-- ========================================
+         NAVBAR
+         ======================================== -->
+    <nav class="navbar-mani">
+        <div class="logo-container">
+            <img src="img/logo.png" alt="Maní Logo" class="logo-img">
+            <div class="logo-text">
+                <h1>Maní, Yucatán</h1>
+                <p>Pueblo Mágico</p>
+            </div>
+        </div>
+        
+        <div class="nav-center">
+            <ul class="nav-links-mani">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="directorio.html">Directorio</a></li>
+                <li><a href="experiencias.html">Experiencias</a></li>
+                <li><a href="mapa.html">Mapa</a></li>
+                <li><a href="turismo.html">Información</a></li>
+            </ul>
+        </div>
+
+        <div class="nav-right">
+            <input type="text" id="search-nav" class="form-control form-control-sm" placeholder="Buscar..." style="max-width: 200px;">
+            <a href="#login-modal" class="cta-button" id="open-login">Iniciar sesión</a>
+        </div>
+    </nav>
+
+    <!-- ========================================
+         ALERTA ESTRATÉGICA
+         ======================================== -->
+    <div id="strategic-alert" class="alert alert-warning alert-dismissible fade show mb-0" role="alert" style="border-radius: 0; border-left: 5px solid #ff6b35;">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-auto">
+                    <strong style="font-size: 18px;">⚠️ Importante:</strong>
+                </div>
+                <div class="col">
+                    <p class="mb-0">La mayoría de negocios en Maní aceptan <strong>solo efectivo</strong>. El banco más cercano está en <strong>Oxkutzcab</strong> (12 km) o <strong>Ticul</strong> (15 km)</p>
+                </div>
+                <div class="col-auto">
+                    <button type="button" class="btn-close" onclick="closeStrategicAlert()"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========================================
+         HERO SECTION
+         ======================================== -->
+    <header class="header-mani" id="inicio">
+        <div class="overlay"></div>
+        <video autoplay muted loop class="background-video">
+            <source src="mani.mp4" type="video/mp4">
+            Tu navegador no soporta la reproducción de videos.
+        </video>
+        <div class="header-content">
+            <h1 class="typewriter">Maní, Pueblo Mágico</h1>
+            <p class="sub-title">Tu Guía Digital para Descubrir la Magia</p>
+            <div class="mt-4">
+                <a href="directorio.html" class="cta-button me-3">Explorar Maní</a>
+                <a href="directorio.html"  class="cta-button me-3">Ver Directorio</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ========================================
+         FILTROS DE MÉTODOS DE PAGO
+         ======================================== -->
+    <section class="payment-filters-section" id="filtros-pago">
+        <div class="container py-5">
+            <h2 class="text-center mb-4">Filtrar por Método de Pago</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="d-flex justify-content-center gap-3 flex-wrap">
+                        <label class="form-check form-check-inline">
+                            <input class="form-check-input payment-filter" type="checkbox" value="tarjeta" checked>
+                            <span class="filter-badge">💳 Tarjeta</span>
+                        </label>
+                        <label class="form-check form-check-inline">
+                            <input class="form-check-input payment-filter" type="checkbox" value="transferencia" checked>
+                            <span class="filter-badge">📱 Transferencia</span>
+                        </label>
+                        <label class="form-check form-check-inline">
+                            <input class="form-check-input payment-filter" type="checkbox" value="efectivo" checked>
+                            <span class="filter-badge">💰 Efectivo</span>
+                        </label>
+                    </div>
+                    <p class="text-center text-white small mt-3 mb-0">Selecciona los métodos de pago disponibles para ti</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         NEGOCIOS FILTRADOS POR MÉTODO DE PAGO
+         ======================================== -->
+    <section class="py-5" id="negocios-filtrados">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h1 class="section-title">Negocios Disponibles</h1>
+                <div class="section-line"></div>
+            </div>
+            <div id="negocios-container" class="row g-4">
+                <!-- Tarjetas se cargan con JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         ACERCA DE - PROGRAMADORES
+         ======================================== -->
+    <section class="py-5 bg-light" id="acerca-de">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h1 class="section-title">Acerca de Nosotros</h1>
+                <div class="section-line"></div>
+                <p class="text-muted lead">Conoce a los desarrolladores detrás de esta plataforma</p>
+            </div>
+            
+            <div class="row g-4">
+                <!-- Esvetlana Batun -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="programmer-card">
+                        <div class="programmer-icon">👩‍💻</div>
+                        <h5 class="programmer-name">Esvetlana Batun</h5>
+                        <p class="programmer-role">Desarrolladora Full Stack</p>
+                        <p class="programmer-bio">Especializada en desarrollo web y diseño de interfaces. Responsable de la arquitectura de la plataforma y funcionalidades principales.</p>
+                        <div class="programmer-skills">
+                            <span class="skill-badge">HTML/CSS</span>
+                            <span class="skill-badge">JavaScript</span>
+                            <span class="skill-badge">Bootstrap</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Wendy Chan -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="programmer-card">
+                        <div class="programmer-icon">👩‍💼</div>
+                        <h5 class="programmer-name">Wendy Chan</h5>
+                        <p class="programmer-role">Desarrolladora Frontend</p>
+                        <p class="programmer-bio">Experta en diseño responsivo y experiencia de usuario. Trabajó en la interfaz visual y la optimización para dispositivos móviles.</p>
+                        <div class="programmer-skills">
+                            <span class="skill-badge">UI/UX</span>
+                            <span class="skill-badge">Responsive Design</span>
+                            <span class="skill-badge">CSS3</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pedro Poot -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="programmer-card">
+                        <div class="programmer-icon">👨‍💻</div>
+                        <h5 class="programmer-name">Pedro Poot</h5>
+                        <p class="programmer-role">Desarrollador Backend</p>
+                        <p class="programmer-bio">Especializado en funcionalidades de búsqueda y filtrado. Implementó los sistemas de base de datos y lógica de aplicación.</p>
+                        <div class="programmer-skills">
+                            <span class="skill-badge">JavaScript</span>
+                            <span class="skill-badge">APIs</span>
+                            <span class="skill-badge">Filtrados</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col-12">
+                    <div class="about-section-info">
+                        <h5 class="text-center mb-4">🎯 Misión del Proyecto</h5>
+                        <p class="text-center text-muted">
+                            Esta plataforma digital fue creada con el objetivo de promover el turismo en Maní, Yucatán, 
+                            facilitando a los visitantes la exploración de negocios locales, experiencias turísticas únicas 
+                            y servicios disponibles. Buscamos fortalecer la economía local y preservar la magia cultural de nuestro pueblo mágico.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         FOOTER
+         ======================================== -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="footer-title">Maní, Pueblo Mágico</h5>
+                    <p class="text-muted small">Tu guía digital para descubrir la magia de Maní, Yucatán.</p>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="footer-title">Enlaces Rápidos</h5>
+                    <ul class="list-unstyled small">
+                        <li><a href="#acerca-de" class="text-muted text-decoration-none">Acerca de</a></li>
+                        <li><a href="#filtros-pago" class="text-muted text-decoration-none">Negocios</a></li>
+                        <li><a href="directorio.html" class="text-muted text-decoration-none">Directorio</a></li>
+                        <li><a href="experiencias.html" class="text-muted text-decoration-none">Experiencias</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="footer-title">Contacto</h5>
+                    <p class="text-muted small mb-1">Comité Pueblo Mágico Maní</p>
+                    <p class="text-muted small mb-1">Email: info@manipueblomágico.com</p>
+                    <p class="text-muted small">Teléfono: (999) XXX-XXXX</p>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="footer-title">Redes Sociales</h5>
+                    <div class="social-links">
+                        <a href="#" class="btn btn-sm btn-outline-light me-2">Facebook</a>
+                        <a href="#" class="btn btn-sm btn-outline-light me-2">Instagram</a>
+                        <a href="#" class="btn btn-sm btn-outline-light">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <hr class="bg-secondary">
+            <div class="text-center text-muted small">
+                <p class="mb-1">&copy; 2024 Maní, Pueblo Mágico. Todos los derechos reservados.</p>
+                <p>Desarrollado por: Esvetalana Batun Villacis | Pedro Angel Poot Chan | Wendy Adriana Chan</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========================================
+         MODAL DE LOGIN
+         ======================================== -->
+    <div class="modal fade" id="login-modal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Inicio de Sesión</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form class="login-form">
+                        <div class="mb-3">
+                            <label for="login-username" class="form-label">Usuario</label>
+                            <input type="text" class="form-control" id="login-username" name="username" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="login-password" class="form-label">Contraseña</label>
+                            <input type="password" class="form-control" id="login-password" name="password" required>
+                        </div>
+                        <button type="submit" class="btn btn-purple w-100">Ingresar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Scripts personalizados -->
+    <script src="js/app.js"></script>
+</body>
+</html>

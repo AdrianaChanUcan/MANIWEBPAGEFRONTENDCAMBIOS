@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- FAVICON - LOGO EN LA PESTAÑA -->
+    <link rel="icon" type="image/png" href="img/GastronomiaLocal.jpg">
+    <link rel="shortcut icon" type="image/png" href="img/GastronomiaLocal.jpg">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="css/global.css">
+    
+    <title>Gastronomía Local - Maní, Yucatán</title>
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar-mani">
+        <div class="logo-container">
+            <img src="img/GastronomiaLocal2.jpg" alt="Maní Logo" class="logo-img">
+            <div class="logo-text">
+                <h1>Maní, Yucatán</h1>
+                <p>Pueblo Mágico</p>
+            </div>
+        </div>
+        
+        <div class="nav-center">
+            <ul class="nav-links-mani">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="directorio.html">Directorio</a></li>
+                <li><a href="experiencias.html">Experiencias</a></li>
+                <li><a href="mapa.html">Mapa</a></li>
+                <li><a href="turismo.html">Información</a></li>
+            </ul>
+        </div>
+
+        <div class="nav-right">
+            <input type="text" id="search-nav" class="form-control form-control-sm" placeholder="Buscar..." style="max-width: 200px;">
+            <a href="#login-modal" class="cta-button" id="open-login">Iniciar sesión</a>
+        </div>
+    </nav>
+
+    <!-- HERO DE GASTRONOMÍA -->
+    <section class="convento-hero">
+        <div class="convento-overlay"></div>
+        <img src="img/GastronomiaLocal.jpg" alt="Gastronomía de Maní, Yucatán" class="convento-hero-img">
+        <div class="convento-hero-content">
+            <h1 class="convento-title">🍲 Gastronomía Local</h1>
+            <p class="convento-subtitle">Sabores tradicionales de Maní y la península de Yucatán</p>
+        </div>
+    </section>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+
+                <!-- INFORMACIÓN RÁPIDA -->
+                <div class="row g-3 mb-5">
+                    <div class="col-md-4">
+                        <div class="info-card-small">
+                            <div class="info-icon">📍</div>
+                            <h5>Ubicación</h5>
+                            <p>Maní, Yucatán<br>En hogares y cocinas tradicionales</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="info-card-small">
+                            <div class="info-icon">🕰️</div>
+                            <h5>Horario típico</h5>
+                            <p>Comidas del mediodía y noche<br>Mercados / fondas en mañanas</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="info-card-small">
+                            <div class="info-icon">🥘</div>
+                            <h5>Estilo</h5>
+                            <p>Cocina maya-yucateca tradicional</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DESCRIPCIÓN GENERAL -->
+                <div class="convento-section">
+                    <h2 class="section-heading">📜 Tradición en cada bocado</h2>
+                    <p class="section-text">
+                        La gastronomía de Maní mezcla herencia maya y sabores tradicionales del sureste mexicano. Platos preparados con ingredientes locales, técnicas ancestrales y una riqueza de sabores únicos hacen de cada comida una experiencia cultural.
+                    </p>
+                    <p class="section-text">
+                        Ya sea en una cocina tradicional, una fonda o en casa de algún local —es común encontrar platillos regionales que reflejan la identidad y el sabor de Yucatán.
+                    </p>
+                </div>
+
+                <!-- PLATILLOS DESTACADOS -->
+                <div class="convento-section">
+                    <h2 class="section-heading">🍽️ Platillos típicos que puedes disfrutar</h2>
+                    <div class="features-grid">
+                        <div class="feature-item">
+                            <span class="feature-icon">🐖</span>
+                            <h5>Cochinita Pibil</h5>
+                            <p>Cerdo marinado en achiote y naranja agria, envuelto en hoja de plátano y cocido lentamente — resultado jugoso, suave y lleno de sabor. Tradicional y representativo. :contentReference[oaicite:1]{index=1}</p>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">🔥</span>
+                            <h5>Poc Chuc</h5>
+                            <p>Cerdo asado, marinado en cítricos, acompañado de frijoles, tortillas hechas a mano y cebolla encurtida — un clásico en Maní. :contentReference[oaicite:3]{index=3}</p>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">🍲</span>
+                            <h5>Sopa de Lima</h5>
+                            <p>Sopa ligera y cítrica, con pollo, lima y tortillas fritas — reconfortante y muy tradicional en la península. :contentReference[oaicite:5]{index=5}</p>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">🌮</span>
+                            <h5>Panuchos & Salbutes</h5>
+                            <p>Tortillas fritas con frijoles o sin, rellenas o cubiertas con pollo/pavo, cebolla morada, aguacate y salsas: perfectas para un antojo rápido. :contentReference[oaicite:8]{index=8}</p>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">🧀</span>
+                            <h5>Queso Relleno</h5>
+                            <p>Queso de bola ahuecado, relleno con carne, especias y frutos, servido con salsas típicas — un platillo especial para celebraciones. :contentReference[oaicite:10]{index=10}</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- EXPERIENCIA GASTRONÓMICA -->
+                <div class="convento-section">
+                    <h2 class="section-heading">🎯 Qué puedes hacer o probar</h2>
+                    <ul class="activities-list">
+                        <li><strong>Desayunos tradicionales:</strong> Sopa de lima, panuchos o salbutes para empezar el día con sabor local.</li>
+                        <li><strong>Almuerzos locales:</strong> Cochinita pibil o Poc Chuc con tortillas hechas a mano.</li>
+                        <li><strong>Snacks y antojitos:</strong> Panuchos, salbutes, tortillas fritas con frijoles o guisos ligeros.</li>
+                        <li><strong>Comidas especiales:</strong> Queso relleno o platillos tradicionales en reuniones familiares o festividades.</li>
+                        <li><strong>Descubrir la cocina tradicional:</strong> Probar recetas caseras, sabores autóctonos y técnicas tradicionales de Yucatán.</li>
+                    </ul>
+                </div>
+
+                <!-- INFORMACIÓN PRÁCTICA -->
+                <div class="convento-section">
+                    <h2 class="section-heading">ℹ️ Consejos para disfrutar la gastronomía</h2>
+                    <div class="info-box">
+                        <div class="info-item">
+                            <strong>🕒 Mejor momento:</strong>
+                            <p>Desayuno o almuerzo — muchos platillos recién preparados en la mañana.</p>
+                        </div>
+                        <div class="info-item">
+                            <strong>🎒 Qué llevar / tener en cuenta:</strong>
+                            <p>Hambre, disposición para probar sabores intensos, y apetito para compartir con familia y amigos.</p>
+                        </div>
+                        <div class="info-item">
+                            <strong>🌶️ Picante opcional:</strong>
+                            <p>Algunos guisos van acompañados de salsas típicas — échales ojo si no toleras chile.</p>
+                        </div>
+                        <div class="info-item">
+                            <strong>🛒 Dónde probarlo:</strong>
+                            <p>Fonditas locales, cocinas tradicionales en Maní, mercados o restaurantes regionales.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- GALERÍA CON CARRUSEL BOOTSTRAP -->
+                <div class="convento-section">
+                    <h2 class="section-heading">📸 Galería Visual</h2>
+                    
+                    <div id="carouselGaleria" class="carousel slide" data-bs-ride="carousel">
+                        <!-- Indicadores -->
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselGaleria" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselGaleria" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselGaleria" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+
+                        <!-- Imágenes del carrusel -->
+                        <div class="carousel-inner rounded-3" style="box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);">
+                            <div class="carousel-item active">
+                                <img src="img/GastronomiaLocal2.jpg" class="d-block w-100" alt="Atrio del Convento de Maní" style="height: 450px; object-fit: cover; border-radius: 15px;">
+                                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded-bottom">
+                                    <h5>Atrio principal - 7,268 m²</h5>
+                                    <p>Amplio espacio para la congregación de fieles</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/GastronomiaLocal2.jpg" class="d-block w-100" alt="Interior del Convento" style="height: 450px; object-fit: cover; border-radius: 15px;">
+                                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded-bottom">
+                                    <h5>Interior con retablos barrocos</h5>
+                                    <p>Extraordinarios retablos de los siglos XVII y XVIII</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/GastronomiaLocal3.jpg" class="d-block w-100" alt="Fachada del Convento" style="height: 450px; object-fit: cover; border-radius: 15px;">
+                                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded-bottom">
+                                    <h5>Fachada con espadañas</h5>
+                                    <p>Diseño renacentista coronado por dos espadañas para campanas</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Botones de navegación -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselGaleria" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Anterior</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselGaleria" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Siguiente</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- BOTÓN DE RETORNO -->
+                <div class="text-center mt-5 mb-5">
+                    <a href="experiencias.html" class="btn btn-primary btn-lg " style="background-color: #9f922b;">
+                        ⬅️ Volver a experiencias
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>

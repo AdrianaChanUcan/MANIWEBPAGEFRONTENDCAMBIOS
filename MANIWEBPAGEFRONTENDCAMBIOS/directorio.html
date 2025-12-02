@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="css/global.css">
+
+    <title>Directorio - Maní, Pueblo Mágico</title>
+</head>
+<body>
+    <!-- ========================================
+         NAVBAR
+         ======================================== -->
+    <nav class="navbar-mani">
+        <div class="logo-container">
+            <img src="img/logo.png" alt="Maní Logo" class="logo-img">
+            <div class="logo-text">
+                <h1>Maní, Yucatán</h1>
+                <p>Pueblo Mágico</p>
+            </div>
+        </div>
+        
+        <div class="nav-center">
+            <ul class="nav-links-mani">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="directorio.html">Directorio</a></li>
+                <li><a href="experiencias.html">Experiencias</a></li>
+                <li><a href="mapa.html">Mapa</a></li>
+                <li><a href="turismo.html">Información</a></li>
+            </ul>
+        </div>
+
+        <div class="nav-right">
+            <input type="text" id="search-nav" class="form-control form-control-sm" placeholder="Buscar..." style="max-width: 200px;">
+            <a href="#login-modal" class="cta-button" id="open-login">Iniciar sesión</a>
+        </div>
+    </nav>
+
+    <!-- ========================================
+         BÚSQUEDA AVANZADA
+         ======================================== -->
+    <section class="search-section bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-4 text-dark">Búsqueda Avanzada</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="input-group mb-3">
+                        <input type="text" id="search-main" class="form-control" placeholder="Busca por nombre, categoría...">
+                        <select id="category-filter" class="form-select">
+                            <option value="">Todas las categorías</option>
+                            <option value="restaurante">🍽️ Restaurante</option>
+                            <option value="artesania">🎨 Artesanía</option>
+                            <option value="cenote">💧 Cenote</option>
+                            <option value="hospedaje">🏨 Hospedaje</option>
+                            <option value="guia">👤 Guía Turístico</option>
+                            <option value="otro">✨ Otro</option>
+                        </select>
+                        <button id="search-btn" class="btn btn-primary">Buscar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         DIRECTORIO CENTRALIZADO
+         ======================================== -->
+    <section class="py-5" id="directorio">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h1 class="section-title">Directorio de Negocios</h1>
+                <div class="section-line"></div>
+            </div>
+            <div id="directorio-container" class="row g-4">
+                <!-- Ejemplo de tarjeta -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card directorio-card h-100">
+                        <div class="directorio-card-header">
+                            <h5 class="directorio-card-title">🍽️ Restaurante Tutul Xiu</h5>
+                            <span class="directorio-card-category">Restaurante</span>
+                        </div>
+                        <div class="card-body">
+                            <p class="directorio-info-text"><strong>Descripción:</strong> Comida tradicional yucateca</p>
+                            <p class="directorio-info-text"><strong>📞</strong> (999) XXX-XXXX</p>
+                            <p class="directorio-info-text"><strong>📍</strong> Centro del pueblo</p>
+                            <p class="directorio-info-text"><strong>⏰</strong> 12:00 - 22:00</p>
+                            <div class="mt-2">
+                                <span class="payment-method-badge badge-efectivo">💰 Efectivo</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ejemplo de tarjeta 2 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card directorio-card h-100">
+                        <div class="directorio-card-header">
+                            <h5 class="directorio-card-title">🎨 Taller de Bordado </h5>
+                            <span class="directorio-card-category">Artesanía</span>
+                        </div>
+                        <div class="card-body">
+                            <p class="directorio-info-text"><strong>Descripción:</strong> Talleres de bordado</p>
+                            <p class="directorio-info-text"><strong>📞</strong> (999) XXX-XXXX</p>
+                            <p class="directorio-info-text"><strong>📍</strong> Calle Principal</p>
+                            <p class="directorio-info-text"><strong>⏰</strong> 10:00 - 17:00</p>
+                            <div class="mt-2">
+                                <span class="payment-method-badge badge-efectivo">💰 Efectivo</span>
+                                <span class="payment-method-badge badge-tarjeta">💳 Tarjeta</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ejemplo de tarjeta 3 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card directorio-card h-100">
+                        <div class="directorio-card-header">
+                            <h5 class="directorio-card-title">🏨 Posada Doña Mary</h5>
+                            <span class="directorio-card-category">Hospedaje</span>
+                        </div>
+                        <div class="card-body">
+                            <p class="directorio-info-text"><strong>Descripción:</strong> Hospedaje cómodo y acogedor</p>
+                            <p class="directorio-info-text"><strong>📞</strong> (999) XXX-XXXX</p>
+                            <p class="directorio-info-text"><strong>📍</strong> Entrada al pueblo</p>
+                            <p class="directorio-info-text"><strong>⏰</strong> 24 horas</p>
+                            <div class="mt-2">
+                                <span class="payment-method-badge badge-tarjeta">💳 Tarjeta</span>
+                                <span class="payment-method-badge badge-transferencia">📱 Transferencia</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         FOOTER
+         ======================================== -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="footer-title">Maní, Pueblo Mágico</h5>
+                    <p class="text-muted small">Tu guía digital para descubrir la magia de Maní, Yucatán.</p>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="footer-title">Enlaces Rápidos</h5>
+                    <ul class="list-unstyled small">
+                        <li><a href="directorio.html" class="text-muted text-decoration-none">Directorio</a></li>
+                        <li><a href="experiencias.html" class="text-muted text-decoration-none">Experiencias</a></li>
+                        <li><a href="mapa.html" class="text-muted text-decoration-none">Mapa</a></li>
+                        <li><a href="turismo.html" class="text-muted text-decoration-none">Información</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="footer-title">Contacto</h5>
+                    <p class="text-muted small mb-1">Comité Pueblo Mágico Maní</p>
+                    <p class="text-muted small mb-1">Email: info@manipueblomágico.com</p>
+                    <p class="text-muted small">Teléfono: (999) XXX-XXXX</p>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="footer-title">Redes Sociales</h5>
+                    <div class="social-links">
+                        <a href="#" class="btn btn-sm btn-outline-light me-2">Facebook</a>
+                        <a href="#" class="btn btn-sm btn-outline-light me-2">Instagram</a>
+                        <a href="#" class="btn btn-sm btn-outline-light">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <hr class="bg-secondary">
+            <div class="text-center text-muted small">
+                <p class="mb-1">&copy; 2024 Maní, Pueblo Mágico. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========================================
+         MODAL DE LOGIN
+         ======================================== -->
+    <div class="modal fade" id="login-modal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Inicio de Sesión</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form class="login-form">
+                        <div class="mb-3">
+                            <label for="login-username" class="form-label">Usuario</label>
+                            <input type="text" class="form-control" id="login-username" name="username" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="login-password" class="form-label">Contraseña</label>
+                            <input type="password" class="form-control" id="login-password" name="password" required>
+                        </div>
+                        <button type="submit" class="btn btn-purple w-100">Ingresar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Scripts personalizados -->
+    <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="css/global.css">
+
+    <title>Información Turística - Maní, Pueblo Mágico</title>
+</head>
+<body>
+    <!-- ========================================
+         NAVBAR
+         ======================================== -->
+    <nav class="navbar-mani">
+        <div class="logo-container">
+            <img src="img/logo.png" alt="Maní Logo" class="logo-img">
+            <div class="logo-text">
+                <h1>Maní, Yucatán</h1>
+                <p>Pueblo Mágico</p>
+            </div>
+        </div>
+        
+        <div class="nav-center">
+            <ul class="nav-links-mani">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="directorio.html">Directorio</a></li>
+                <li><a href="experiencias.html">Experiencias</a></li>
+                <li><a href="mapa.html">Mapa</a></li>
+                <li><a href="turismo.html">Información</a></li>
+            </ul>
+        </div>
+
+        <div class="nav-right">
+            <input type="text" id="search-nav" class="form-control form-control-sm" placeholder="Buscar..." style="max-width: 200px;">
+            <a href="#login-modal" class="cta-button" id="open-login">Iniciar sesión</a>
+        </div>
+    </nav>
+
+    <!-- ========================================
+         INFORMACIÓN TURÍSTICA
+         ======================================== -->
+    <section class="py-5 bg-light" id="turismo">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h1 class="section-title">Información Turística</h1>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="row g-4">
+                <!-- Cómo Llegar -->
+                <div class="col-lg-6 col-md-12">
+                    <div class="info-card">
+                        <h5 class="info-card-title">🚗 ¿Cómo Llegar?</h5>
+                        <ul class="list-unstyled">
+                            <li><strong>Desde Mérida:</strong> 120 km aprox. (2 horas)</li>
+                            <li><strong>Desde Oxkutzcab:</strong> 12 km aprox. (15 minutos)</li>
+                            <li><strong>Desde Ticul:</strong> 15 km aprox. (20 minutos)</li>
+                            <li><strong>Ruta:</strong> Carretera 307 hasta Oxkutzcab, luego hacia Maní</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Horarios -->
+                <div class="col-lg-6 col-md-12">
+                    <div class="info-card">
+                        <h5 class="info-card-title">⏰ Horarios Locales</h5>
+                        <ul class="list-unstyled">
+                            <li><strong>Restaurantes:</strong> 12:00 - 22:00</li>
+                            <li><strong>Tiendas artesanales:</strong> 10:00 - 17:00</li>
+                            <li><strong>Cenote Xcabachen:</strong> 8:00 - 18:00</li>
+                            <li><strong>Convento:</strong> 8:00 - 17:00</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Recomendaciones -->
+                <div class="col-lg-6 col-md-12">
+                    <div class="info-card">
+                        <h5 class="info-card-title">💡 Recomendaciones</h5>
+                        <ul class="list-unstyled">
+                            <li>✓ Lleva efectivo, la mayoría solo acepta efectivo</li>
+                            <li>✓ Visita en temporada baja para mejor experiencia</li>
+                            <li>✓ Prueba la gastronomía local: Poc Chuc</li>
+                            <li>✓ Trae repelente para mosquitos</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Eventos Especiales -->
+                <div class="col-lg-6 col-md-12">
+                    <div class="info-card">
+                        <h5 class="info-card-title">🎉 Eventos Especiales</h5>
+                        <ul class="list-unstyled">
+                            <li><strong>Fiestas Patronales:</strong> Noviembre (San Miguel)</li>
+                            <li><strong>Equinoccio:</strong> Marzo y Septiembre</li>
+                            <li><strong>Vaquerías:</strong> Durante festividades</li>
+                            <li><strong>Consulta:</strong> Eventos locales actuales</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Servicios de Emergencia -->
+                <div class="col-lg-6 col-md-12">
+                    <div class="info-card">
+                        <h5 class="info-card-title">🆘 Servicios Importantes</h5>
+                        <ul class="list-unstyled">
+                            <li><strong>Clínica:</strong> Centro del pueblo</li>
+                            <li><strong>Farmacia:</strong> Disponible</li>
+                            <li><strong>Comisaría:</strong> Centro del pueblo</li>
+                            <li><strong>Emergencias:</strong> 911</li>
+                        </ul>
+                    </div>
+                </div>
+
+               
+                <div class="col-lg-6 col-md-12">
+                    <div class="info-card">
+                        <h5 class="info-card-title">🎒 Qué Llevar</h5>
+                        <ul class="list-unstyled">
+                            <li>✓ Efectivo en abundancia</li>
+                            <li>✓ Ropa cómoda y fresca</li>
+                            <li>✓ Bloqueador solar</li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         FORMULARIO DE CONTACTO
+         ======================================== -->
+    <section class="py-5" id="contacto">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h1 class="section-title">¿Preguntas?</h1>
+                <div class="section-line"></div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <form class="contact-form">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="name" name="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Correo Electrónico</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Mensaje</label>
+                            <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-purple w-100">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         FOOTER
+         ======================================== -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="footer-title">Maní, Pueblo Mágico</h5>
+                    <p class="text-muted small">Tu guía digital para descubrir la magia de Maní, Yucatán.</p>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="footer-title">Enlaces Rápidos</h5>
+                    <ul class="list-unstyled small">
+                        <li><a href="directorio.html" class="text-muted text-decoration-none">Directorio</a></li>
+                        <li><a href="experiencias.html" class="text-muted text-decoration-none">Experiencias</a></li>
+                        <li><a href="mapa.html" class="text-muted text-decoration-none">Mapa</a></li>
+                        <li><a href="turismo.html" class="text-muted text-decoration-none">Información</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="footer-title">Contacto</h5>
+                    <p class="text-muted small mb-1">Comité Pueblo Mágico Maní</p>
+                    <p class="text-muted small mb-1">Email: info@manipueblomágico.com</p>
+                    <p class="text-muted small">Teléfono: (999) XXX-XXXX</p>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="footer-title">Redes Sociales</h5>
+                    <div class="social-links">
+                        <a href="#" class="btn btn-sm btn-outline-light me-2">Facebook</a>
+                        <a href="#" class="btn btn-sm btn-outline-light me-2">Instagram</a>
+                        <a href="#" class="btn btn-sm btn-outline-light">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <hr class="bg-secondary">
+            <div class="text-center text-muted small">
+                <p class="mb-1">&copy; 2024 Maní, Pueblo Mágico. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========================================
+         MODAL DE LOGIN
+         ======================================== -->
+    <div class="modal fade" id="login-modal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Inicio de Sesión</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form class="login-form">
+                        <div class="mb-3">
+                            <label for="login-username" class="form-label">Usuario</label>
+                            <input type="text" class="form-control" id="login-username" name="username" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="login-password" class="form-label">Contraseña</label>
+                            <input type="password" class="form-control" id="login-password" name="password" required>
+                        </div>
+                        <button type="submit" class="btn btn-purple w-100">Ingresar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Scripts personalizados -->
+    <script src="js/app.js"></script>
+</body>
+</html>
